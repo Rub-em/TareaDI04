@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="border-pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dam.alumno.filmoteca.HelloController">
+
+    <right>
+        <VBox fx:id="detailPane" alignment="CENTER_LEFT" spacing="10" styleClass="detail-pane" BorderPane.alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+            <ImageView fx:id="detailPoster" fitHeight="300.0" fitWidth="410.0" preserveRatio="true" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets right="1000.0" />
+            </VBox.margin></ImageView>
+            <Label fx:id="detailTitle" styleClass="label" wrapText="true">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+            <Label fx:id="detailYear" styleClass="label secondary" wrapText="true">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+            <Label fx:id="detailDescription" maxWidth="700.0" styleClass="label secondary" wrapText="true" VBox.vgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="button-pane">
+                <Button onAction="#onAddMovie" styleClass="button-add" text="Añadir Película" />
+                <Button onAction="#onEditMovie" styleClass="button" text="Modificar Película" />
+                <Button onAction="#onDeleteMovie" styleClass="button-danger" text="Borrar Película" />
+            </HBox>
+        </VBox>
+    </right>
+
+    <left>
+        <VBox alignment="TOP_CENTER" spacing="10" styleClass="table-pane" BorderPane.alignment="CENTER" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+            <TextField fx:id="searchField" onKeyReleased="#onSearch" promptText="Buscar película..." styleClass="text-field" />
+            <TableView fx:id="moviesTable" styleClass="table-view" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="columnId" prefWidth="50" text="ID" />
+                    <TableColumn fx:id="columnTitle" prefWidth="150" text="Título" />
+                    <TableColumn fx:id="columnYear"  text="Año" />
+                    <TableColumn fx:id="columnRating" text="Calificación" />
+                    <TableColumn fx:id="columnGenre" prefWidth="200" text="Géneros" />
+                </columns>
+            </TableView>
+        </VBox>
+    </left>
+</BorderPane>

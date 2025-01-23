@@ -1,0 +1,123 @@
+.border-pane {
+    -fx-background-image: url("https://static.vecteezy.com/system/resources/previews/043/555/242/non_2x/realistic-3d-cinema-film-strip-in-perspective-isolated-on-blue-background-template-cinema-festival-movie-design-cinema-film-strip-for-ad-poster-presentation-show-brochure-banner-or-flyer-vector.jpg");
+    -fx-background-repeat: repeat;
+    -fx-background-position: center;
+    -fx-background-size: auto;
+    -fx-font-family: "Arial, Helvetica, sans-serif";
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #1565C0;
+}
+
+.button-danger {
+    -fx-background-color: #E53935;
+    -fx-text-fill: white;
+}
+
+.button-danger:hover {
+    -fx-background-color: #B71C1C;
+}
+
+.button-add {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button-add:hover {
+    -fx-background-color: #388E3C;
+}
+
+.button-add:pressed {
+    -fx-background-color: #2E7D32;
+}
+
+.detail-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-border-radius: 0;
+}
+
+.detail-pane .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+}
+
+.detail-pane .label.secondary {
+    -fx-text-fill: #CCCCCC;
+    -fx-font-size: 14px;
+}
+
+.table-pane {
+    -fx-background-color: #2E2E2E;
+    -fx-border-color: #444;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+.table-view {
+    -fx-background-color: #3E3E3E;
+    -fx-border-color: #444;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-table-cell-border-color: #444;
+}
+
+.table-column-header {
+    -fx-background-color: #4E4E4E;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #444;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: #444;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #505050;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+}
+
+.table-cell {
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.text-field {
+    -fx-background-color: #3E3E3E;
+    -fx-border-color: #444;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.label.secondary {
+    -fx-text-fill: #666;
+}
